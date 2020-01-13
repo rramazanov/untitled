@@ -7,7 +7,6 @@ const app = express();
 
 app.use(express.json({extended: true}));
 
-
 if(process.env.NODE_ENV === 'production') {
   app.use('/', express.static(path.json(__dirname, 'client', 'build')));
 
@@ -27,7 +26,7 @@ async function start() {
       useUnifiedTopology: true,
       useCreateIndex: true
     });
-    app.listen(PORT, () => console.log(`working on port${PORT}`));
+    app.listen(PORT, () => console.log(`working on port ${PORT}`));
   } catch (e) {
     console.log('error', e.message);
     process.exit(1);

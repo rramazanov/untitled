@@ -34,13 +34,14 @@ export const AuthPage = () => {
     try {
       const data = await request('/api/auth/login', 'POST', {...form});
       message(data.message);
-    } catch (e) {}
+    } catch (e) {
+    }
   };
 
   return (
     <div className="row">
       <div className="col s6 offset-s3">
-        <h1>Сокращение ссылок</h1>
+        <h1></h1>
         <div className="card blue darken-1">
           <div className="card-content white-text">
             <span className="card-title">Авторизация</span>
