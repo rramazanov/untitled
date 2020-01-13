@@ -5,4 +5,4 @@ const schema = new Schema({
     links: [{type: Types.ObjectId, ref: 'Link'}]
 });
 
-module.exports = model('user', schema);
+module.exports = model('User', schema);

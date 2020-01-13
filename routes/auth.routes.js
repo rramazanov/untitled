@@ -6,7 +6,6 @@ const {check, validationResult} = require('express-validator');
 const router = Router();
 const User = require('../models/User');
 
-// /api/auth/register
 router.post(
   '/register',
   [
@@ -41,7 +40,6 @@ router.post(
     }
   });
 
-// /api/auth/login
 router.post(
   '/login',
   [
