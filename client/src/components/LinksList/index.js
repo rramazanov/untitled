@@ -1,10 +1,11 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import Loader from "../Loader";
 
 
-export const LinksList = ({links}) => {
+const LinksList = ({links}) => {
   if(!links.length) {
-    return <p className="center">Ссылок нет</p>
+    return <p className="center">links not found</p>
   }
 
   return (
@@ -35,3 +36,5 @@ export const LinksList = ({links}) => {
     </table>
   )
 };
+
+export default LinksList;

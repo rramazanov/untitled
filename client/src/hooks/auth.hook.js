@@ -23,7 +23,7 @@ export const useAuth = () => {
     localStorage.removeItem(storageName);
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     const data = JSON.parse(localStorage.getItem(storageName));
 
     if (data && data.token) {
