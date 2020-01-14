@@ -34,14 +34,14 @@ const CreatePage = () => {
       <div className="col s8 offset-s2">
         <div className="input-field">
           <input
-            placeholder="Вставьте ссылку"
+            placeholder="set link"
             id="link"
             type="text"
             value={link}
             onChange={e => setLink(e.target.value)}
             onKeyPress={pressHandler}
           />
-          <label htmlFor="email">Введите ссылку</label>
+          <label htmlFor="email">set link</label>
         </div>
       </div>
     </div>
