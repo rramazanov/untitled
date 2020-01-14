@@ -3,8 +3,8 @@ const config = require('config');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const {check, validationResult} = require('express-validator');
-const router = Router();
 const User = require('../models/User');
+const router = Router();
 
 router.post(
   '/register',
